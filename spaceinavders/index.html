@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>space invaders</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="lives">
+        <h4>Lives:</h4>
+        <div class="hearts">
+            <div class="heart1"><i class='bx bxs-heart'></i></div>
+            <div class="heart2"><i class='bx bxs-heart'></i></div>
+            <div class="heart3"><i class='bx bxs-heart'></i></div>
+        </div>
+    </div>
+
+    <div class="levels">
+        <h4>Current <br> Level :</h4>
+        <div><p id="level">1</p></div>
+    </div>
+
+    <div class="skins">
+        <h4>Game</h4><h4>Skins:</h4>
+        <div class="skin skin-1"><canvas></canvas></div>
+        <div class="skin skin-2"><canvas></canvas></div>
+        <div class="skin skin-3"><canvas></canvas></div>
+        <div class="skin skin-4"><canvas></canvas></div>
+        <div class="skin skin-5"><canvas></canvas></div>
+        <div class="skin skin-6"><canvas></canvas></div>
+        <div class="skin skin-7"><canvas></canvas></div>
+        <div class="skin skin-8"><canvas></canvas></div>
+        <div class="skin skin-9"><canvas></canvas></div>
+        <div class="skin skin-10"><canvas></canvas></div>
+    </div>
+
+    <div class="headofgame">
+        <h1>Space Invaders</h1>
+        <p id="saysomething">Kill the enemies</p>
+    </div>
+
+    <div class="gameboard">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+    </div>
+
+    <div class="windowscore">
+        <h1 id="info">Congratulations on winning the game!</h1>
+        <h4>Your Score:</h4>
+        <p id="score">0</p>
+        <button onclick="resetGame()">Reset Game</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
